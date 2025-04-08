@@ -18,7 +18,17 @@ For your quick review there are some result on notebooks:
 steps to run the code and get the result.
 
 1. environment set up
+​	create virtual environment and install the requirements
 
+```bash
+conda create -n myenv
+conda activate myenv
+```
+
+```bash
+cd path/to/your/file
+pip install -r requirements.txt
+```
 
 
 
