@@ -58,10 +58,11 @@ def merged_model_A(input_tensor, classifier_list, filter_model_list, device,meta
         confidence_score+=x[1]
     confidence_score/=n # weight 1/n
     #print(confidence_score)
+    #print(cond_threshold)
     if len(pre_set)!=1 or confidence_score<=cond_threshold:
         #return -1
         #return pieline2(input_tensor,classifier_list,device)
-        return pipeline_meta(input_tensor,classifier_list,device,meta_path,'B')
+        return pipeline_meta(input_tensor,classifier_list,device,meta_path,'A')
     else:
         #return -1
         return classifier_result(classifier_list[result[0][0]],input_tensor,result[0][0],'A')
@@ -95,7 +96,7 @@ def merged_model_B(input_tensor, classifier_list, filter_model_list,device,meta_
     for x in result:
         confidence_score+=x[1]
     confidence_score/=n # weight 1/n
-    cond_threshold=0.6
+    #cond_threshold=0.6
     #print(confidence_score)
     if len(pre_set)!=1 or confidence_score<=cond_threshold:
         #return -1
