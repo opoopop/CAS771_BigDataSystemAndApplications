@@ -2,7 +2,7 @@
 
 This is the project of CAS 771:Introduction to Big Data Systems and Applications.
 
-Download the file of **data** and **model** from https://drive.google.com/drive/folders/1OkRybAjtIrF07nQTSVjpl38aMpwEG52t?usp=sharing, thenplace it in the root directory. 
+Download the file of **data** and **model** from https://drive.google.com/drive/folders/1OkRybAjtIrF07nQTSVjpl38aMpwEG52t?usp=sharing, then place it in the root directory. 
 
 midterm lightweight classifier : https://drive.google.com/drive/folders/1PG8TpA5mRWyIiEwLP8vLOyxLAhP94L6f?usp=drive_link
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 
 
-2. test of task B
+2. test of task A
 
 ```bash
 python scr/main.py --task A
