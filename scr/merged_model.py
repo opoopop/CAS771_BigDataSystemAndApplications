@@ -179,7 +179,7 @@ def display_sample_B(test_set, classifier_list, filter_list, device, meta_path,t
     for i in sample_list:
         image, label = test_set[i]
         image = image.unsqueeze(0).to(device)  
-        output = merged_model_A(image,classifier_list,filter_list,device,meta_path,cond_threshold=threshold)
+        output = merged_model_B(image,classifier_list,filter_list,device,meta_path,cond_threshold=threshold)
         display_samples.append((image.squeeze().cpu(), op_map_B[rever_map_B[label.item()]], op_map_B[rever_map_B[output]]))
     
     print(f'Displaying {display_num} samples: ')
