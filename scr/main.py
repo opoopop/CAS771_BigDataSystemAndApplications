@@ -18,7 +18,7 @@ if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     if args.task=='A':
-        threshold=0.6
+        threshold=0.9
         test_set,test_loader=load_test_data_A()
         filter_file_list=[
         "model/taskA/gating_network/filter_model_1/"
@@ -53,6 +53,7 @@ if __name__ == '__main__':
 
     
     classifier_list=create_classifier_list(classifier_file_list,device,args.task)
+    #print(threshold)
     test_merged_model(test_set,classifier_list,filter_list,device,threshold,meta_path,args.task)
     if args.task=='B':
         display_sample_B(test_set, classifier_list, filter_list, device,  meta_path,threshold,display_num=10)
