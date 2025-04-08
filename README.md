@@ -60,9 +60,10 @@ testing on number 1100
 testing on number 1200
 testing on number 1300
 testing on number 1400
-Test Accuracy: 90.53%
+Test Accuracy: 90.60%
 index of the sample displayed [1303, 397, 386, 549, 597, 1113, 1365, 134, 1117, 1164]
 Displaying 10 samples:
+
 ```
 
 ![image-20250408161947244](imgs/taskA.png)
