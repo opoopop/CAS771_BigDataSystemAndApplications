@@ -55,7 +55,7 @@ index of the sample displayed [1303, 397, 386, 549, 597, 1113, 1365, 134, 1117, 
 Displaying 10 samples:
 ```
 
-![image-20250408161947244](D:\newonedrive\OneDrive\Documents\CAS771Bigdatasystem\image-20250408161947244.png)
+![image-20250408161947244](imgs/taskA.png)
 
 3. test of task B
 
@@ -81,4 +81,4 @@ Displaying 10 samples:
 
 ```
 
-![image-20250408162154069](D:\newonedrive\OneDrive\Documents\CAS771Bigdatasystem\image-20250408162154069.png)
+![image-20250408162154069](imgs/taskB.png)
