@@ -10,16 +10,7 @@ import torch
 helper functions
 """
 
-def create_classifier_list(file_list,device):
-    result=[]
-    # load classifiers
-    for f in file_list:
-        model =CNN_0() # 
-        model.load_state_dict(torch.load(f))
-        model.to(device)
-        model.eval()
-        result.append(model)
-    return result
+
 
 
 def create_filter_list_vit(file_list,device):
